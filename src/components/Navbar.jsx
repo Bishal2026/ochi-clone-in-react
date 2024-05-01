@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className=" bg-fixed z-[999] h-14 p-6 mx-11 pt-8 text-white flex items-center justify-between">
+    <div className=" fixed z-[999] h-14 p-6 mx-11 pt-8 text-white flex items-center justify-between w-full  ">
       <div>
         <svg
           width="72"
@@ -41,7 +41,7 @@ function Navbar() {
         <h3>Insights</h3>
       </div>
       <div>
-        <h3>Contact Us</h3>
+        <h3 className="mr-14">Contact Us</h3>
       </div>
     </div>
   );
