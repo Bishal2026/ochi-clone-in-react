@@ -9,7 +9,9 @@ function Featured() {
       <div className="cards w-full p-10 flex  items-center gap-20">
         <div className="cardcontainer w-1/2 h-[70vh] relative ">
           <h1 className=" absolute z-[9] text-7xl  left-full text-[#b1df28] -translate-x-1/2 top-1/2 -translate-y-1/2 font-bold ">
-            FYDE
+            {"FYDE".split("").map((item, index) => {
+              <span className="bg-red-500">{item}</span>;
+            })}
           </h1>
           <div className="card w-full h-full rounded-xl overflow-hidden  ">
             <img

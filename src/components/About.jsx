@@ -2,7 +2,12 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full p-20 bg-[#CDEA68] rounded-lg">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.1"
+      className="w-full p-20 bg-[#CDEA68] rounded-lg"
+    >
       <h1 className="text-black font-semibold text-3xl capitalize">
         Ochi is a strategic partner for fast-grow­ing tech businesses that need
         to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great

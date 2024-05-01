@@ -1,15 +1,26 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function LandingPage() {
   return (
-    <div className="w-full h-screen pt-2">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.5"
+      className="w-full h-screen pt-2"
+    >
       <div className="textstructure mt-40 mx-14          ">
         {["we create", "Eye opening", "presentations"].map((item, index) => {
           return (
             <div className="masker ">
               <div className="w-fit flex items-end overflow-hidden">
                 {index === 1 && (
-                  <div className=" mr-[1vw] w-[8vw] rounded-md bg-green-500 h-[5.7vw]    relative mt-1.5"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "8vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className=" mr-[1vw] w-[8vw] rounded-md bg-green-500 h-[5.7vw]    relative mt-1.5"
+                  ></motion.div>
                 )}
                 <h1 className="uppercase text-[7.5vw]  leading-[6vw]">
                   {item}
